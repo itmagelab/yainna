@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@master/Gilroy-Light.eot?v=2");
+    src:
+        local("Gilroy Light"),
+        local("Gilroy-Light"),
+        url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@master/Gilroy-Light.eot?v=2#iefix")
+            format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@master/Gilroy-Light.woff?v=2")
+            format("woff"),
+        url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@master/Gilroy-Light.ttf?v=2")
+            format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@master/Gilroy-Extrabold.eot?v=2");
+    src:
+        local("Gilroy Extrabold"),
+        local("Gilroy-Extrabold"),
+        url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@master/Gilroy-Extrabold.eot?v=2#iefix")
+            format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@master/Gilroy-Extrabold.woff?v=2")
+            format("woff"),
+        url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@master/Gilroy-Extrabold.ttf?v=2")
+            format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
