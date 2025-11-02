@@ -1,9 +1,9 @@
+use data::{Button, Content};
 use gloo_net::http::Request;
 use wasm_bindgen_futures::spawn_local;
 use yew::prelude::*;
 
 mod data;
-use data::{Button, Content};
 
 #[function_component(App)]
 fn app() -> Html {
@@ -68,20 +68,31 @@ fn hero_section(props: &HeroSectionProps) -> Html {
     let hero = &props.hero;
 
     html! {
-        <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
-            // Фоновое изображение
-            <div class="absolute inset-0 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-100">
-                <div
-                    class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style={format!("background-image: url('{}'); opacity: 0.3;", hero.background_image)}
-                ></div>
-            </div>
+        <div class="relative min-h-screen flex items-center justify-center overflow-hidden" style="min-height: 100vh; min-height: -webkit-fill-available;">
+            // Фоновый градиент
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-100"></div>
+
+            // Фоновое изображение - используем picture element для адаптивной загрузки
+            <picture class="absolute inset-0 w-full h-full opacity-30 pointer-events-none" style="z-index: 0;">
+                <source
+                    media="(max-width: 768px)"
+                    srcset="/static/images/background-image-mobile.jpg"
+                />
+                <img
+                    src={hero.background_image.clone()}
+                    alt=""
+                    class="absolute inset-0 w-full h-full"
+                    style="object-fit: cover; object-position: center; display: block;"
+                    decoding="async"
+                    fetchpriority="high"
+                />
+            </picture>
 
             // Затемняющий оверлей для лучшей читаемости
-            <div class="absolute inset-0 bg-gradient-to-b from-amber-900/10 via-transparent to-amber-900/20"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-amber-900/10 via-transparent to-amber-900/20" style="z-index: 1;"></div>
 
             // Контент поверх изображения в полупрозрачном блоке
-            <div class="relative z-10 text-center px-4 py-20 max-w-4xl mx-auto">
+            <div class="relative text-center px-4 py-20 max-w-4xl mx-auto" style="z-index: 10;">
                 <div class="backdrop-blur-md bg-white/50 rounded-3xl shadow-2xl p-8 md:p-12 border border-amber-200/50">
                     <h1 class="text-5xl md:text-7xl font-heading font-extrabold mb-6 animate-fade-in text-amber-900">
                         { &hero.title }

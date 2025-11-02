@@ -19,6 +19,20 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="preload"
+            href="/static/images/background-image-mobile.jpg"
+            as="image"
+            media="(max-width: 768px)"
+            fetchpriority="high"
+        />
+        <link
+            rel="preload"
+            href="/static/images/background-image.jpg"
+            as="image"
+            media="(min-width: 769px)"
+            fetchpriority="high"
+        />
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {

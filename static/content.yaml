@@ -4,7 +4,8 @@ hero:
   title: "Студия красоты"
   greeting: "Привет, я Инна"
   description: "Профессиональный визаж и уход за бровями и ресницами в Сочи"
-  background_image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80"
+  # background_image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80"
+  background_image: "/static/images/background-image.jpg"
   buttons:
     - text: "Записаться онлайн"
       link: "https://t.me/yainna"
