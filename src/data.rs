@@ -19,9 +19,14 @@ pub struct HeroSection {
     pub greeting: String,
     pub description: String,
     pub background_image: String,
+    #[serde(default = "default_mobile_background")]
     pub background_image_mobile: String,
     pub buttons: Vec<Button>,
     pub icon: String,
+}
+
+fn default_mobile_background() -> String {
+    "/static/images/background-image-mobile.jpg".to_string()
 }
 
 #[derive(Debug, Clone, Deserialize, PartialEq)]

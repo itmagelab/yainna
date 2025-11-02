@@ -16,7 +16,7 @@ fn app() -> Html {
                 match load_content().await {
                     Ok(data) => content.set(Some(data)),
                     Err(e) => {
-                        gloo_console::error!("Failed to load content:", e);
+                        gloo_console::error!("Failed to load content:", &e);
                     }
                 }
             });
