@@ -12,3 +12,10 @@ gloo-net = "0.5"
 gloo-console = "0.3"
 wasm-bindgen-futures = "0.4"
 web-sys = { version = "0.3", features = ["Window", "Document", "Element"] }
+
+[profile.release]
+opt-level = "z"     # Optimize for size
+lto = true          # Enable Link Time Optimization
+codegen-units = 1   # Better optimization (slower compile)
+panic = "abort"     # Remove unwinding code
+strip = true        # Remove debug symbols
