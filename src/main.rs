@@ -76,7 +76,7 @@ fn hero_section(props: &HeroSectionProps) -> Html {
             <picture class="absolute inset-0 w-full h-full opacity-30 pointer-events-none" style="z-index: 0;">
                 <source
                     media="(max-width: 768px)"
-                    srcset="/static/images/background-image-mobile.jpg"
+                    srcset={hero.background_image_mobile.clone()}
                 />
                 <img
                     src={hero.background_image.clone()}

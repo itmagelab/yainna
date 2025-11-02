@@ -19,6 +19,7 @@ pub struct HeroSection {
     pub greeting: String,
     pub description: String,
     pub background_image: String,
+    pub background_image_mobile: String,
     pub buttons: Vec<Button>,
     pub icon: String,
 }
