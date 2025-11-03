@@ -165,8 +165,12 @@ fn about_section(props: &AboutSectionProps) -> Html {
 
                     <div class="order-1 md:order-2">
                         <div class="relative">
-                            <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-amber-100 to-orange-200 flex items-center justify-center">
-                                <i class="fas fa-user-circle text-9xl text-amber-600"></i>
+                            <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-amber-100 to-orange-200">
+                                <img
+                                    src={about.image.clone()}
+                                    alt={format!("{} - {}", &about.title, &about.subtitle)}
+                                    class="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
                     </div>
@@ -258,7 +262,7 @@ fn services_section(props: &ServicesSectionProps) -> Html {
 
                                     <div class="mt-6">
                                         <a
-                                            href="https://t.me/yainna"
+                                            href="https://t.me/innamaslinna"
                                             class="block w-full bg-amber-600 text-white text-center py-3 rounded-full font-body font-semibold hover:bg-amber-700 transition-all duration-300"
                                         >
                                             { "Записаться" }
@@ -455,13 +459,13 @@ fn testimonials_section(props: &TestimonialsSectionProps) -> Html {
                 // Ссылка на больше отзывов
                 <div class="text-center mt-12">
                     <p class="text-amber-700 font-body mb-4">
-                        { "Больше отзывов в наших социальных сетях" }
+                        { "Больше отзывов в моих социальных сетях" }
                     </p>
                     <div class="flex justify-center gap-4">
-                        <a href="https://instagram.com/yainna" target="_blank" class="text-amber-600 hover:text-amber-700 transition-colors duration-300">
+                        <a href="https://instagram.com/inna.maslinna" target="_blank" class="text-amber-600 hover:text-amber-700 transition-colors duration-300">
                             <i class="fab fa-instagram text-3xl"></i>
                         </a>
-                        <a href="https://vk.com/yainna" target="_blank" class="text-amber-600 hover:text-amber-700 transition-colors duration-300">
+                        <a href="https://vk.com/inna_maslinna" target="_blank" class="text-amber-600 hover:text-amber-700 transition-colors duration-300">
                             <i class="fab fa-vk text-3xl"></i>
                         </a>
                     </div>
@@ -663,19 +667,19 @@ fn footer(props: &FooterProps) -> Html {
                             { "Студия красоты" }
                         </h3>
                         <p class="text-white/80 font-body mb-4">
-                            { "Сочи, Центральный район" }
+                            { "Сочи, Хостинский район" }
                         </p>
                         <div class="flex gap-4">
-                            <a href="https://instagram.com/yainna" target="_blank" class="text-white/80 hover:text-white transition-colors">
+                            <a href="https://instagram.com/inna.maslinna" target="_blank" class="text-white/80 hover:text-white transition-colors">
                                 <i class="fab fa-instagram text-2xl"></i>
                             </a>
-                            <a href="https://t.me/yainna" target="_blank" class="text-white/80 hover:text-white transition-colors">
+                            <a href="https://t.me/innamaslinna" target="_blank" class="text-white/80 hover:text-white transition-colors">
                                 <i class="fab fa-telegram text-2xl"></i>
                             </a>
-                            <a href="https://wa.me/79001234567" target="_blank" class="text-white/80 hover:text-white transition-colors">
+                            <a href="https://wa.me/79618519801" target="_blank" class="text-white/80 hover:text-white transition-colors">
                                 <i class="fab fa-whatsapp text-2xl"></i>
                             </a>
-                            <a href="https://vk.com/yainna" target="_blank" class="text-white/80 hover:text-white transition-colors">
+                            <a href="https://vk.com/inna_maslinna" target="_blank" class="text-white/80 hover:text-white transition-colors">
                                 <i class="fab fa-vk text-2xl"></i>
                             </a>
                         </div>

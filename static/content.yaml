@@ -3,15 +3,15 @@
 hero:
   title: "Студия красоты"
   greeting: "Привет, я Инна"
-  description: "Профессиональный визаж и уход за бровями и ресницами в Сочи"
+  description: "Работаю с бровями и ресницами, делая акцент на натуральность и стойкий результат"
   background_image: "/static/images/background-image.jpg"
   background_image_mobile: "/static/images/background-image-mobile.jpg"
   buttons:
     - text: "Записаться онлайн"
-      link: "https://t.me/yainna"
+      link: "https://t.me/innamaslinna"
       type: "primary"
     - text: "Позвонить"
-      link: "tel:+79000000000"
+      link: "tel:+79618519801"
       type: "secondary"
   icon: "fa-spa"
 
@@ -19,16 +19,15 @@ hero:
 about:
   title: "Обо мне"
   subtitle: "Познакомьтесь с мастером"
-  image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" # ← ЗАМЕНИТЕ на: /static/images/inna-photo.jpg (когда добавите свое фото)
+  image: "/static/images/inna-photo.jpg"
   description: |
-    Меня зовут Инна, и я профессиональный визажист с более чем 5-летним опытом работы в индустрии красоты.
+    Я — мастер бровей и ламинирования ресниц с опытом работы более 5 лет.
+    За это время я помогла более 500 девушкам подчеркнуть свою красоту и стать увереннее.
 
-    Моя специализация — создание образов, которые подчеркивают естественную красоту каждой женщины.
-    Я верю, что макияж и уход — это не просто услуги, а искусство, которое помогает раскрыть вашу
-    уникальность и придать уверенность.
+    Ко мне приходят не только за идеальными бровями, ресницами и макияжем,
+    но и за ощущением уюта, принятия и уверенности в себе. Я тщательно слежу за стерильностью и чистотой, чтобы каждая процедура была безопасной и комфортной.
 
-    Каждая процедура выполняется с душой и вниманием к деталям. Я использую только качественные
-    профессиональные материалы и постоянно совершенствую свои навыки, посещая курсы и мастер-классы.
+    Моя цель — подчеркнуть вашу индивидуальность и сделать так, чтобы вы уходили с улыбкой и чувством, что мир стал чуть ярче.
   achievements:
     - title: "Опыт работы"
       description: "Более 5 лет в индустрии красоты"
@@ -42,71 +41,71 @@ about:
 
 # Секция "Услуги и цены"
 services:
-  title: "Наши услуги"
+  title: "Мои услуги"
   subtitle: "Профессиональный подход к вашей красоте"
   categories:
-    - name: "Визаж"
+    - name: "Образы"
       icon: "fa-palette"
       description: "Профессиональный макияж для любого случая"
       items:
         - name: "Дневной макияж"
           description: "Естественный макияж для повседневной жизни"
           duration: "60 минут"
-          price: "2500 ₽"
+          price: "4000 ₽"
         - name: "Вечерний макияж"
           description: "Яркий и стойкий макияж для особых событий"
           duration: "90 минут"
-          price: "3500 ₽"
+          price: "5000 ₽"
         - name: "Свадебный макияж"
           description: "Идеальный образ для самого важного дня"
           duration: "120 минут"
-          price: "5000 ₽"
-        - name: "Макияж для фотосессии"
-          description: "Стойкий макияж, который отлично смотрится на фото"
+          price: "7000 ₽"
+        - name: "Укладка"
+          description: "Классическая укладка, подчёркивающая естественную красоту волос. Придаёт аккуратный и ухоженный вид, подходит для любого случая"
           duration: "90 минут"
-          price: "4000 ₽"
+          price: "2000 ₽"
+        - name: "Плетение"
+          description: "Аккуратные и стильные косички, которые подчёркивают индивидуальность и позволяют создавать разнообразные образы — от повседневных до праздничных"
+          duration: "90 минут"
+          price: "700 ₽"
 
     - name: "Брови"
       icon: "fa-eye"
       description: "Оформление и уход за бровями"
       items:
-        - name: "Коррекция бровей"
-          description: "Придание идеальной формы вашим бровям"
-          duration: "30 минут"
-          price: "800 ₽"
-        - name: "Окрашивание бровей"
-          description: "Стойкое окрашивание профессиональной краской"
-          duration: "40 минут"
-          price: "1000 ₽"
-        - name: "Ламинирование бровей"
-          description: "Укладка и фиксация бровей на длительный срок"
-          duration: "60 минут"
-          price: "2000 ₽"
         - name: "Архитектура бровей"
           description: "Комплексное оформление: коррекция + окрашивание"
           duration: "60 минут"
-          price: "1500 ₽"
+          price: "1700 ₽"
+        - name: "Ламинирование бровей"
+          description: "Укладка и фиксация бровей на длительный срок"
+          duration: "60 минут"
+          price: "2500 ₽"
+        - name: "Коррекция бровей"
+          description: "Придание идеальной формы вашим бровям"
+          duration: "30 минут"
+          price: "1200 ₽"
+        - name: "Окрашивание бровей"
+          description: "Стойкое окрашивание профессиональной краской"
+          duration: "40 минут"
+          price: "1200 ₽"
+        - name: "Депиляция одной зоны"
+          description: "Удаление не желательных волос на лице"
+          duration: "40 минут"
+          price: "400 ₽"
 
     - name: "Ресницы"
       icon: "fa-star"
       description: "Красивые и выразительные ресницы"
       items:
-        - name: "Наращивание ресниц"
-          description: "Классическое или объемное наращивание"
-          duration: "120 минут"
-          price: "от 2500 ₽"
         - name: "Ламинирование ресниц"
           description: "Подкручивание и питание родных ресниц"
           duration: "60 минут"
-          price: "2000 ₽"
+          price: "2800 ₽"
         - name: "Окрашивание ресниц"
           description: "Стойкое окрашивание безопасной краской"
           duration: "30 минут"
           price: "700 ₽"
-        - name: "Снятие наращенных ресниц"
-          description: "Безопасное снятие с уходом"
-          duration: "30 минут"
-          price: "500 ₽"
 
 # Секция "Галерея работ"
 # ИНСТРУКЦИЯ: Поместите свои фотографии работ в соответствующие папки:
@@ -117,64 +116,63 @@ services:
 # ЕСЛИ НЕТ ФОТО: Оставьте URL из интернета (начинается с https://)
 # ЕСЛИ ЕСТЬ ФОТО: Замените на локальный путь (например: "/static/images/portfolio/makeup/evening-1.jpg")
 portfolio:
-  title: "Наши работы"
-  subtitle: "Портфолио наших мастеров"
+  title: "Мои работы"
+  subtitle: ""
   description: "Фотографии до и после процедур"
   filters:
     - "Все"
     - "Визаж"
     - "Брови"
     - "Ресницы"
+    - "Брови и Ресницы"
   items:
-    # ВИЗАЖ - положите фото в папку static/images/portfolio/makeup/
-    # Пока фото нет - используется временное изображение из интернета
-    - image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80" # ← ЗАМЕНИТЕ на: /static/images/portfolio/makeup/evening-makeup.jpg
+    - image: "/static/images/portfolio/makeup/photo_2022-08-20_19-45-48.jpg"
       category: "Визаж"
       title: "Вечерний макияж"
       description: "Яркий образ для особого вечера"
-    - image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&q=80" # ← ЗАМЕНИТЕ на: /static/images/portfolio/makeup/wedding-makeup.jpg
+    - image: "/static/images/portfolio/makeup/photo_2025-07-16_16-34-37.jpg"
       category: "Визаж"
       title: "Свадебный макияж"
       description: "Нежный образ невесты"
-    - image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80" # ← ЗАМЕНИТЕ на: /static/images/portfolio/makeup/day-makeup.jpg
-      category: "Визаж"
-      title: "Дневной макияж"
-      description: "Естественная красота"
-    - image: "https://images.unsplash.com/photo-1504439904031-93ded9f93e4e?w=800&q=80" # ← ЗАМЕНИТЕ на: /static/images/portfolio/makeup/photo-makeup.jpg
+    - image: "/static/images/portfolio/makeup/photo_2025-11-03_21-35-43.jpg"
+      category: "Ресницы"
+      title: "Ламинирование ресниц"
+      description: "Яркий завиток"
+    - image: "/static/images/portfolio/makeup/photo_2025-05-24_20-07-54.jpg"
       category: "Визаж"
       title: "Макияж для фотосессии"
       description: "Профессиональный образ"
 
     # БРОВИ - положите фото в папку static/images/portfolio/brows/
     # Пока фото нет - используется временное изображение из интернета
-    - image: "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=800&q=80" # ← ЗАМЕНИТЕ на: /static/images/portfolio/brows/architecture.jpg
+    - image: "/static/images/portfolio/makeup/photo_2025-06-02_19-33-34.jpg"
       category: "Брови"
       title: "Архитектура бровей"
       description: "Идеальная форма"
-    - image: "https://images.unsplash.com/photo-1515688594390-b649af70d282?w=800&q=80" # ← ЗАМЕНИТЕ на: /static/images/portfolio/brows/lamination.jpg
-      category: "Брови"
-      title: "Ламинирование бровей"
-      description: "Ухоженные брови"
-    - image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800&q=80" # ← ЗАМЕНИТЕ на: /static/images/portfolio/brows/coloring.jpg
+    - image: "/static/images/portfolio/makeup/photo_2025-06-02_19-33-33.jpg"
+      category: "Брови и Ресницы"
+      title: "Прорежевание бровей Ламинирование ресниц"
+      description: "Воздушные брови - выразительный взгляд"
+    - image: "/static/images/portfolio/makeup/photo_2025-08-19_13-45-38.jpg"
       category: "Брови"
       title: "Окрашивание бровей"
       description: "Насыщенный цвет"
 
     # РЕСНИЦЫ - положите фото в папку static/images/portfolio/lashes/
     # Пока фото нет - используется временное изображение из интернета
-    - image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80" # ← ЗАМЕНИТЕ на: /static/images/portfolio/lashes/extensions.jpg
-      category: "Ресницы"
-      title: "Наращивание ресниц"
-      description: "Объёмные ресницы"
-    - image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80" # ← ЗАМЕНИТЕ на: /static/images/portfolio/lashes/lamination.jpg
-      category: "Ресницы"
-      title: "Ламинирование ресниц"
-      description: "Изгиб и объём"
+    - image: "/static/images/portfolio/makeup/photo_2025-11-03_20-50-44.jpg"
+      category: "Брови"
+      title: "Ламинирование бровей"
+      description: "Ухоженные брови"
+    - image: "/static/images/portfolio/makeup/photo_2025-11-03_20-52-43.jpg"
+      category: "Брови"
+      title: "Мужская коррекция"
+      description: "Ухоженные брови"
 
 # Секция "Отзывы клиентов"
 testimonials:
-  title: "Отзывы наших клиентов"
-  subtitle: "Что говорят о нас"
+  title: "Отзывы моих клиентов"
+  subtitle: "Что говорят обо мне"
   items:
     - name: "Анна Петрова"
       avatar: "AP"
@@ -218,34 +216,34 @@ contact:
   title: "Контакты"
   subtitle: "Свяжитесь со мной удобным способом"
   description: "Запишитесь на процедуру или задайте вопрос"
-  phone: "+7 (900) 123-45-67"
-  phone_link: "tel:+79001234567"
-  email: "info@yainna.ru"
-  address: "г. Сочи, Центральный район, ул. Красная, д. 15"
+  phone: "+7 (961) 851-98-01"
+  phone_link: "tel: +79001234567"
+  email: "inna.maslinna@yandex.ru"
+  address: "г. Сочи, ул. Платановая, д. 15/1"
   working_hours: "Ежедневно с 10:00 до 20:00"
-  map_url: "https://yandex.ru/map-widget/v1/?ll=39.720349%2C43.585472&z=17"
+  map_url: https://yandex.ru/map-widget/v1/?ll=39.866778%2C43.511084&mode=poi&poi%5Bpoint%5D=39.866547%2C43.511137&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D195016917260&z=20.36
   social:
     - name: "Instagram"
       icon: "fa-instagram"
-      link: "https://instagram.com/yainna"
+      link: "https://www.instagram.com/inna.maslinna"
       color: "hover:text-pink-600"
     - name: "Telegram"
       icon: "fa-telegram"
-      link: "https://t.me/yainna"
+      link: "https://t.me/innamaslinna"
       color: "hover:text-blue-500"
     - name: "WhatsApp"
       icon: "fa-whatsapp"
-      link: "https://wa.me/79001234567"
+      link: "https://wa.me/79618519801"
       color: "hover:text-green-600"
     - name: "VK"
       icon: "fa-vk"
-      link: "https://vk.com/yainna"
+      link: "https://vk.com/inna_maslinna"
       color: "hover:text-blue-700"
 
 # Footer
 footer:
-  copyright: "© 2024 Я Инна. Все права защищены"
-  description: "Студия красоты в Сочи. Профессиональный визаж и уход за бровями и ресницами."
+  copyright: "© 2025 Я Инна. Все права защищены"
+  description: "Работаю с бровями и ресницами, делая акцент на натуральность и стойкий результат."
   links:
     - text: "Политика конфиденциальности"
       url: "#privacy"
@@ -256,14 +254,14 @@ footer:
 info:
   city: "Сочи"
   name: "Я Инна"
-  slogan: "Ваша красота - наша работа"
+  slogan: "Ваша красота - моя работа"
 
 # Контактная информация
 contacts:
-  phone: "+7 (900) 000-00-00"
-  telegram: "https://t.me/yainna"
-  whatsapp: "https://wa.me/79000000000"
-  instagram: "https://instagram.com/yainna"
-  email: "info@yainna.ru"
-  address: "г. Сочи, ул. Примерная, д. 1"
+  phone: "+7 (961) 851-98-01"
+  telegram: "https://t.me/innamaslinna"
+  whatsapp: "https://wa.me/79618519801"
+  instagram: "https://www.instagram.com/inna.maslinna"
+  email: "inna.maslinna@yandex.ru"
+  address: "г. Сочи, ул. Платановая, д. 15/1"
   working_hours: "Ежедневно с 10:00 до 20:00"
