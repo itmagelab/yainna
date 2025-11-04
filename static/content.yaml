@@ -8,7 +8,7 @@ hero:
   background_image_mobile: "/static/images/background-image-mobile.jpg"
   buttons:
     - text: "Записаться онлайн"
-      link: "https://t.me/innamaslinna"
+      link: "https://mst.link/maslova_inna1"
       type: "primary"
     - text: "Позвонить"
       link: "tel:+79618519801"
@@ -258,6 +258,7 @@ info:
 
 # Контактная информация
 contacts:
+  link: https://mst.link/maslova_inna1
   phone: "+7 (961) 851-98-01"
   telegram: "https://t.me/innamaslinna"
   whatsapp: "https://wa.me/79618519801"

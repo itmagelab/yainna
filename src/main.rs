@@ -263,7 +263,7 @@ fn services_section(props: &ServicesSectionProps) -> Html {
 
                                     <div class="mt-6">
                                         <a
-                                            href={props.contacts.telegram.clone()}
+                                            href={props.contacts.link.clone()}
                                             class="block w-full bg-amber-600 text-white text-center py-3 rounded-full font-body font-semibold hover:bg-amber-700 transition-all duration-300"
                                         >
                                             { "Записаться" }

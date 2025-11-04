@@ -154,6 +154,7 @@ pub struct SalonInfo {
 
 #[derive(Debug, Clone, Deserialize, PartialEq)]
 pub struct Contacts {
+    pub link: String,
     pub phone: String,
     pub telegram: String,
     pub whatsapp: String,
