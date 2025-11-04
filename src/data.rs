@@ -158,6 +158,7 @@ pub struct Contacts {
     pub telegram: String,
     pub whatsapp: String,
     pub instagram: String,
+    pub vk: String,
     pub email: String,
     pub address: String,
     pub working_hours: String,

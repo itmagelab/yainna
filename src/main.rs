@@ -29,11 +29,11 @@ fn app() -> Html {
             <>
                 <HeroSection hero={data.hero.clone()} />
                 <AboutSection about={data.about.clone()} />
-                <ServicesSection services={data.services.clone()} />
+                <ServicesSection services={data.services.clone()} contacts={data.contacts.clone()} />
                 <PortfolioSection portfolio={data.portfolio.clone()} />
-                <TestimonialsSection testimonials={data.testimonials.clone()} />
+                <TestimonialsSection testimonials={data.testimonials.clone()} contacts={data.contacts.clone()} />
                 <ContactSection contact={data.contact.clone()} />
-                <Footer footer={data.footer.clone()} />
+                <Footer footer={data.footer.clone()} contacts={data.contacts.clone()} />
             </>
         },
         None => html! {
@@ -201,6 +201,7 @@ fn about_section(props: &AboutSectionProps) -> Html {
 #[derive(Properties, PartialEq)]
 struct ServicesSectionProps {
     services: data::ServicesSection,
+    contacts: data::Contacts,
 }
 
 #[function_component(ServicesSection)]
@@ -262,7 +263,7 @@ fn services_section(props: &ServicesSectionProps) -> Html {
 
                                     <div class="mt-6">
                                         <a
-                                            href="https://t.me/innamaslinna"
+                                            href={props.contacts.telegram.clone()}
                                             class="block w-full bg-amber-600 text-white text-center py-3 rounded-full font-body font-semibold hover:bg-amber-700 transition-all duration-300"
                                         >
                                             { "Записаться" }
@@ -392,6 +393,7 @@ fn portfolio_section(props: &PortfolioSectionProps) -> Html {
 #[derive(Properties, PartialEq)]
 struct TestimonialsSectionProps {
     testimonials: data::TestimonialsSection,
+    contacts: data::Contacts,
 }
 
 #[function_component(TestimonialsSection)]
@@ -462,11 +464,11 @@ fn testimonials_section(props: &TestimonialsSectionProps) -> Html {
                         { "Больше отзывов в моих социальных сетях" }
                     </p>
                     <div class="flex justify-center gap-4">
-                        <a href="https://instagram.com/inna.maslinna" target="_blank" class="text-amber-600 hover:text-amber-700 transition-colors duration-300">
+                        <a href={props.contacts.instagram.clone()} target="_blank" class="text-amber-600 hover:text-amber-700 transition-colors duration-300">
                             <i class="fab fa-instagram text-3xl"></i>
                         </a>
-                        <a href="https://vk.com/inna_maslinna" target="_blank" class="text-amber-600 hover:text-amber-700 transition-colors duration-300">
-                            <i class="fab fa-vk text-3xl"></i>
+                        <a href={props.contacts.telegram.clone()} target="_blank" class="text-amber-600 hover:text-amber-700 transition-colors duration-300">
+                            <i class="fab fa-telegram text-3xl"></i>
                         </a>
                     </div>
                 </div>
@@ -623,6 +625,7 @@ fn contact_section(props: &ContactSectionProps) -> Html {
 #[derive(Properties, PartialEq)]
 struct FooterProps {
     footer: data::FooterSection,
+    contacts: data::Contacts,
 }
 
 #[function_component(Footer)]
@@ -670,16 +673,16 @@ fn footer(props: &FooterProps) -> Html {
                             { "Сочи, Хостинский район" }
                         </p>
                         <div class="flex gap-4">
-                            <a href="https://instagram.com/inna.maslinna" target="_blank" class="text-white/80 hover:text-white transition-colors">
+                            <a href={props.contacts.instagram.clone()} target="_blank" class="text-white/80 hover:text-white transition-colors">
                                 <i class="fab fa-instagram text-2xl"></i>
                             </a>
-                            <a href="https://t.me/innamaslinna" target="_blank" class="text-white/80 hover:text-white transition-colors">
+                            <a href={props.contacts.telegram.clone()} target="_blank" class="text-white/80 hover:text-white transition-colors">
                                 <i class="fab fa-telegram text-2xl"></i>
                             </a>
-                            <a href="https://wa.me/79618519801" target="_blank" class="text-white/80 hover:text-white transition-colors">
+                            <a href={props.contacts.whatsapp.clone()} target="_blank" class="text-white/80 hover:text-white transition-colors">
                                 <i class="fab fa-whatsapp text-2xl"></i>
                             </a>
-                            <a href="https://vk.com/inna_maslinna" target="_blank" class="text-white/80 hover:text-white transition-colors">
+                            <a href={props.contacts.vk.clone()} target="_blank" class="text-white/80 hover:text-white transition-colors">
                                 <i class="fab fa-vk text-2xl"></i>
                             </a>
                         </div>
